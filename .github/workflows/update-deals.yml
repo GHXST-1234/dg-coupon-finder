@@ -1,0 +1,32 @@
+name: Update DG Coupon Deals
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-deals:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run DG deal scraper
+        run: node scraper.js
+
+      - name: Commit and push updated deals
+        run: |
+          git config --local user.email "github-actions[bot]@://github.com"
+          git config --local user.name "github-actions[bot]"
+          git add deals.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update DG deals" && git push)
