@@ -1,0 +1,53 @@
+{
+  "updated": "Starter Deals Loaded",
+  "deals": [
+    {
+      "id": "dg-1",
+      "title": "Colgate Cavity Protection Toothpaste (4 oz)",
+      "category": "household",
+      "coupon": "$1.00/1 DG Digital Coupon",
+      "shelfPrice": 1.00,
+      "finalPrice": 0.00
+    },
+    {
+      "id": "dg-2",
+      "title": "Febreze Air Effects Spray (8.8 oz)",
+      "category": "household",
+      "coupon": "$2.30/1 DG Digital Coupon",
+      "shelfPrice": 3.25,
+      "finalPrice": 0.95
+    },
+    {
+      "id": "dg-3",
+      "title": "Gain Flings Laundry Pacs (14-16 ct)",
+      "category": "household",
+      "coupon": "$2.00/1 Gain DG Digital Coupon",
+      "shelfPrice": 4.50,
+      "finalPrice": 2.50
+    },
+    {
+      "id": "dg-4",
+      "title": "Tide Simply Liquid Detergent (31 oz)",
+      "category": "household",
+      "coupon": "$1.50/1 Tide Simply DG Digital",
+      "shelfPrice": 3.75,
+      "finalPrice": 2.25
+    },
+    {
+      "id": "dg-5",
+      "title": "General Mills Cereal (Select Boxes)",
+      "category": "food",
+      "coupon": "$1.00/2 General Mills DG Digital",
+      "shelfPrice": 2.50,
+      "finalPrice": 2.00
+    },
+    {
+      "id": "dg-6",
+      "title": "Saturday $5/$25 Gain + Paper Scenario",
+      "category": "5off25",
+      "coupon": "Clip $5/$25 + Gain & Scott Digitals",
+      "shelfPrice": 25.50,
+      "finalPrice": 8.75
+    }
+  ]
+}
