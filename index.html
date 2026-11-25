@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DG Coupon Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="top-row">
+      <h1>DG Coupon Finder</h1>
+      <a href="https://dollargeneral.com" target="_blank" class="clip-btn">Open DG Coupons</a>
+    </div>
+    <p id="updated">Loading latest deals...</p>
+    <input type="text" id="search" placeholder="Search Tide, Gain, food, $5/$25...">
+    <div class="filters">
+      <button class="filter active" data-cat="all">All</button>
+      <button class="filter" data-cat="under1">Under $1 / Free</button>
+      <button class="filter" data-cat="5off25">$5 off $25</button>
+      <button class="filter" data-cat="household">Household</button>
+      <button class="filter" data-cat="food">Food</button>
+    </div>
+  </header>
+
+  <section class="cart-bar">
+    <div>
+      <span id="cart-count">0 items checked</span>
+      <strong id="cart-total">$0.00 est. total</strong>
+    </div>
+    <button id="clear-cart">Clear</button>
+  </section>
+
+  <main id="deals-list"></main>
+  <script src="script.js"></script>
+</body>
+</html>
